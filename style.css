@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+#eldiv{
+  border: 5px gray inset;
+  width: 350px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,auto);
+
+
+}
+#cabecera{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+
+  
+}
+
+canvas{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-right: auto;
+  margin-left: auto;
+}
+#puntos{
+  grid-column-end: 4;
+
+}
+#punt{
+  text-align: center;
+}
+#vid{
+  text-align: center;
+}
+#footer{
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+
+}
+
+
