@@ -21,7 +21,11 @@ function setup() {
   canvas.parent("eldiv")
   nave=new Nave();
   inva=new naveInvasoras();
-
+  
+  
+  //agregamos los eventos touchstart y touchEnd
+  canvas.touchStarted(touchStart);
+  canvas.touchEnded(touchEnd);
 }
 
 function draw() {
@@ -43,6 +47,12 @@ function draw() {
   destruccionNavesInvasoras();
 
 
+//disparar al tocar la pantalla
+if(touchDown){
+  nave.crearBala();
+  sonDisparo();
+
+}
 
   
   
